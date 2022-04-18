@@ -1,0 +1,202 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 55em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.imagenes {
+  border-radius: 20px;
+  width: 700px;
+  height: 500px;
+}
+
+.job {
+  margin-top: 50px;
+  background-color: red;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.addproduct {
+  margin: auto;
+  background-color: #198754;
+  border-radius: 5px;
+  padding: 10px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+  .job{
+      margin-top: 90px;
+  }
+}
+
+.flex-container {
+  background-color: black;
+  border-radius: 10px;
+  height: 70%;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px 5px 5px;
+}
+
+.seccion2 {
+  background-color: #343a40;
+  font-size: 27px;
+  font-family: Perpetua;
+  border-radius: 10px 10px 0px 0px; 
+  height: 25%;
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+  max-height: 200px;
+}
+
+@media only screen and (max-width: 550px) {
+  .seccion2{
+      font-size: calc(0.9em + 0.6vh)
+  }
+}
+
+.imagenes2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.carousel.slide.home1 {
+  width: 100%;
+  height: 80%;
+  margin: 0px 10px 10px 10px; 
+}
+
+.carousel-indicators.home1 {
+}
+
+.btn.btn-success.home {
+  color: black; 
+  background-color: white;
+}
+
+.dropdown.shop{
+
+}
+
+.nav-link.shop{
+
+}
+
+.card{
+  color:black;
+  width: 300px; 
+  height: 300px; 
+  margin:10px 5px;
+}
+
+.card-img-top{
+  width: 100%; 
+  height: 70%;
+}
+
+@media only screen and (max-width: 790px) {
+
+  .mb-auto{
+    height: 25%;
+  }
+
+  .nav.nav-masthead.justify-content-center.float-md-end{
+      padding: 5px;
+    }
+  
+  .float-md-start.mb-0{
+    padding: 10px;
+  }
+
+  .nav-link.shop {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #dropdownMenuLink {
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  .nav.nav-masthead.justify-content-center.float-md-end.boton{
+    padding: 0px;
+  }
+  
+  .imagenes{
+    margin-top: 0px;
+    width: 80%;
+    height: 80%;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .card{
+    margin: auto;
+    margin-top: 50px;
+    width: 300px; height: 300px; 
+  }
+  
+  .pagination{
+    margin-top: 50px;
+  }
+
+}
+
+.card-footer.text-center {
+  margin-left: 40px;
+  width: 230px;
+}
+

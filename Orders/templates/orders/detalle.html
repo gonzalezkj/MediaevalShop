@@ -1,0 +1,48 @@
+{% extends "AppTienda/base.html" %}
+
+{% load carro_tags %}
+{% load static %}   
+
+{% block content %}  
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center text-muted"> Order detail #{{ order.id }}</h1>
+                <table class="table table-bordered">
+                    <thead>
+                            <tr>
+                                <th style="color:white">Product</th>
+                                <th style="color:white">Quantity</th>
+                                <th style="color:white">Price</th>
+                                <th style="color:white">Total price</th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                            {% for order_line in order.orderline_set.all %} 
+                                <tr class="text-center">
+                                    <td style="color:white">{{ order_line.product.name }}</td>
+                                    <td style="color:white">{{ order_line.quantity }}</td>
+                                    <td style="color:white">{{ order_line.product.price|money_format:"$" }}</td>
+                                    <td style="color:white">{{ order_line.product.price|multiply:order_line.quantity|money_format:"$" }}</td>
+                                </tr>
+                            {% endfor %} 
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td class="text-center" style="color:white">
+                                {{ order.total|money_format:"$" }}
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
