@@ -1,2 +1,2 @@
 # MediaevalShop
-¿Qué hubiera sucedido si en la Edad Media magicamente hubiese existido el internet? Bueno, lo más probable es que las personas usarian este sitio web en el cual podrían ver los productos del mercado y realizar pedidos desde su casa.  
+This web page represents what the Middle Ages would have been like if they had the internet to make purchases, such as weapons, horses and ships. Contains shopping cart in which each order will be sent as a list to its respective email, sending files and others.
